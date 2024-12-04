@@ -290,6 +290,7 @@
   }
 
   function getColorInfo(hue) {
+    if (hue < 0) hue += 360;
     // Maps red colors to make picking hue easier
     if (hue >= 334 && hue <= 360) {
       hue -= 360;
